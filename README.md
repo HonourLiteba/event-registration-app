@@ -7,3 +7,4 @@ A simple, client-side web application designed to manage technology event regist
 - **Task 2**: Strict conditional check parameters for form inputs with visual UI notifications.
 - **Option A**: Dynamic item deletion via structural identification filter arrays.
 - **Option D**: Data persistence built directly via browser-backed `localStorage` implementations.
+- 
