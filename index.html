@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Tech Event Registration</h1>
+            <p>Register below to secure your spot at the upcoming technology event.</p>
+        </header>
+
+        <section class="form-section">
+            <!-- Message container for success/error feedback -->
+            <div id="feedback-message" class="message"></div>
+
+            <form id="registration-form" novalidate>
+                <div class="form-group">
+                    <label for="full-name" class="input-label">Full Name</label>
+                    <input type="text" id="full-name" class="form-input" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="input-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="age" class="input-label">Age</label>
+                    <input type="number" id="age" class="form-input" placeholder="18">
+                </div>
+
+                <div class="form-group">
+                    <label for="technology" class="input-label">Select Technology</label>
+                    <select id="technology" class="form-input">
+                        <option value="">-- Choose an option --</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="React">React</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms" class="input-label">I accept the terms and conditions</label>
+                </div>
+
+                <button type="submit" class="btn">Register Event</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="list-section">
+            <h2>Registered Participants (<span id="participant-count">0</span>)</h2>
+            <ul id="participants-list">
+                <!-- Dynamically populated via JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
