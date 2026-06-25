@@ -9,3 +9,4 @@ A simple, client-side web application designed to manage technology event regist
 - **Option D**: Data persistence built directly via browser-backed `localStorage` implementations.
 - 
 - 
+- 
